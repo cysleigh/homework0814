@@ -1,0 +1,5 @@
+1.建立公告資料庫
+CREATE TABLE `news`.`news` ( `newsID` INT(255) NOT NULL AUTO_INCREMENT , `date` TIMESTAMP NOT NULL , `title` CHAR(255) NOT NULL , `content` VARCHAR(65535) NOT NULL , PRIMARY KEY (`newsID`)) ENGINE = InnoDB;
+
+2.建立會員資料庫(會員帳號、密碼、權限)
+CREATE TABLE `news`.`userinfo` ( `userID` VARCHAR(40) NOT NULL , `password` VARCHAR(40) NOT NULL , `Permission` INT(10) NOT NULL , PRIMARY KEY (`userID`)) ENGINE = InnoDB;
